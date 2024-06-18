@@ -522,10 +522,20 @@ export const formMessageDescriptors = {
     description: 'Option for other supporting documents',
     id: 'form.field.label.otherBirthSupportingDocuments'
   },
+  affidavitSupportingDocuments: {
+    defaultMessage: 'Affidavit of birth declaration',
+    description: 'Option for Affidavit supporting documents',
+    id: 'form.field.label.affidavitSupportingDocuments'
+  },
   legalGuardianProof: {
     defaultMessage: 'Proof of legal guardianship',
     description: 'Label for document option Proof of legal guardianship',
     id: 'form.field.label.legalGuardianProof'
+  },
+  affidavit: {
+    defaultMessage: 'Affidavit',
+    description: 'Label for document option Affidavit',
+    id: 'form.field.label.affidavit'
   },
   assignedResponsibilityProof: {
     defaultMessage: 'Proof of assigned responsibility',

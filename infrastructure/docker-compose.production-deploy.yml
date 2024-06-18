@@ -223,11 +223,12 @@ services:
     #   - --tls.stores.default.defaultcertificate.keyfile=/certs/crvs.cm.key
 
     environment:
-      - GOOGLE_DOMAINS_ACCESS_TOKEN=${GOOGLE_DOMAINS_ACCESS_TOKEN}
+      - GODADDY_API_KEY=${GODADDY_API_KEY}
+      - GODADDY_API_SECRET=${GODADDY_API_SECRET}
     command:
       - --certificatesresolvers.certResolver.acme.dnschallenge=true
-      - --certificatesresolvers.certResolver.acme.dnschallenge.provider=googledomains
-      - --certificatesresolvers.certResolver.acme.email=riku@opencrvs.org
+      - --certificatesresolvers.certResolver.acme.dnschallenge.provider=godaddy
+      - --certificatesresolvers.certResolver.acme.email=hello@l-agence.digital
       - --certificatesresolvers.certResolver.acme.storage=acme.json
 
       - --entrypoints.web.address=:80

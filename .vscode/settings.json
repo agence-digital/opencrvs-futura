@@ -1,0 +1,26 @@
+{
+    "peacock.remoteColor": "#d1ae1c",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e5c43b",
+        "activityBar.background": "#e5c43b",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#138d75",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#e5c43b",
+        "statusBar.background": "#d1ae1c",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#a48916",
+        "statusBarItem.remoteBackground": "#d1ae1c",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#d1ae1c",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#d1ae1c99",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/deploy-prod.yml",
+        ".github/workflows/deploy.yml"
+    ]
+}

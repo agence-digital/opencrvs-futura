@@ -12,7 +12,7 @@ window.config = {
   AUTH_API_URL: 'https://auth.{{hostname}}/',
   CONFIG_API_URL: 'https://config.{{hostname}}',
   // Country code in uppercase ALPHA-3 format
-  COUNTRY: 'FTR',
+  COUNTRY: 'FAR',
   LANGUAGES: 'en,fr',
   CLIENT_APP_URL: 'https://register.{{hostname}}/',
   COUNTRY_CONFIG_URL: 'https://countryconfig.{{hostname}}',

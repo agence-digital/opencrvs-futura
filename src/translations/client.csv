@@ -890,6 +890,7 @@ form.field.label.addressLine1UrbanOption,,Residential Area,Zone résidentielle
 form.field.label.addressLine2,,Area / Ward / Mouja / Village,Zone / Quartier / Mouja / Village
 form.field.label.addressLine2UrbanOption,,Street,Rue / Numéro de parcelle
 form.field.label.addressLine3,,Union / Municipality / Cantonment,Union / Municipalité / Cantonment
+form.field.label.affidavit,,Affidavit,Déclaration sous serment
 form.field.label.ageOfBride,,Age of bride,Âge de la mariée
 form.field.label.ageOfDeceased,,Age of deceased,âge du défunt
 form.field.label.ageOfFather,,Age of father,Âge du père

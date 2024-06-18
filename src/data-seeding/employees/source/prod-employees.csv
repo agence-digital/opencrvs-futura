@@ -1,1 +1,14 @@
 primaryOfficeId,givenNames,familyName,systemRole,role,mobile,username,email,password
+CRVS_OFFICE_OFFICE01001,Marla,Lane,FIELD_AGENT,Community Leader,0921681528,m.lane,marla.lane@gmail.com,test
+CRVS_OFFICE_OFFICE01001,Darkus,Banfee,REGISTRATION_AGENT,Registration Clerk,0921012112,d.banfee,darkus.banfee+@gmail.com,test
+CRVS_OFFICE_OFFICE01001,Miriam,North,LOCAL_REGISTRAR,Registrar,0921681113,m.north,miriam.north@gmail.com,test
+CRVS_OFFICE_OFFICE01001,Jonathan,Pye-Finch,LOCAL_REGISTRAR,Registrar,0921681114,j.pye,jon@opencrvs.org,test
+CRVS_OFFICE_OFFICE01001,Edward,Duffus,LOCAL_REGISTRAR,Registrar,0921681115,e.duffus,ed@opencrvs.org,test
+CRVS_OFFICE_OFFICE01001,Annina,Wersun,LOCAL_REGISTRAR,Registrar,0921681116,a.wersun,annina@opencrvs.org,test
+CRVS_OFFICE_OFFICE01001,Emmanuel,Mayuka,LOCAL_SYSTEM_ADMIN,Administrator,0938681117,e.mayuka,e.mayuka@gmail.com,test
+CRVS_OFFICE_OFFICE01001,Euan,Millar,LOCAL_SYSTEM_ADMIN,Administrator,0938681118,e.millar,euan@opencrvs.org,test
+CRVS_OFFICE_OFFICE01001,Riku,Rouvila,LOCAL_SYSTEM_ADMIN,Administrator,0938681119,r.rouvila,riku@opencrvs.org,test
+CRVS_OFFICE_OFFICE01000,Edgar,Kazembe,PERFORMANCE_MANAGEMENT,Operation Manager,0977777777,e.kazembe,e.kazembe@gmail.com,test
+CRVS_OFFICE_OFFICE01000,Joseph,Musonda,NATIONAL_REGISTRAR,Registrar General,0915151515,j.musonda,j.musonda@gmail.com,test
+CRVS_OFFICE_OFFICE01000,Ronald,Ndi,NATIONAL_SYSTEM_ADMIN,National Admininistrator,0921111112,r.ndi,ronald@l-agence.digital,test
+CRVS_OFFICE_OFFICE01000,Herve,Djia,NATIONAL_SYSTEM_ADMIN,National Admininistrator,0921111113,h.djia,djia@l-agence.digital,test

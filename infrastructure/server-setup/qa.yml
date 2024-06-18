@@ -11,9 +11,24 @@ all:
     users:
       # @todo this is where you define which development team members have access to the server.
       # If you need to remove access from someone, do not remove them from this list, but instead set their state: absent
-      - name: my-user
+      - name: riku
         ssh_keys:
-          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABg...Z/rhU= user@example.com
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWIF63S4f3z9wQMvWibmvl7MPuJ6EVrkP0HuvgNhcs/4DZYMcR/GRBvV4ldOSYMlBevIXycgGzNDxKJgENUuwIWanjBu7uVAHyD6+cIRD1h63qq7Cjv/2HYTfBDKOrKzPOhA6zWvKO0ZGWsjRXk5LWMCbKOkvKJCxOpj/NVBxeE4FTK5YADYPV3OSsmBtqTHrVLm2sMmShU/2hMYYswWkobidjX65+nK/X+3C+yJbHwiydVvn+QCrFlFfCLPWKe8rUpOxyxofPqWVQh6CHhHfT8okaOc9sOE8Qeip9ljo84DftJh3Xm3ynOdWK1hH2BvRvxNadWqcE1qECbkg4tx2x riku.rouvila@gmail.com
+        state: present
+        sudoer: true
+      - name: euan
+        ssh_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDECqHO65UpyrrO8uueD06RxGaVVq22f152Rf8qVQQAAIGAMu6gCs7ztlZ8a3yQgSEIjM/Jl1/RqIVs6CziTEef74nLFTZ5Ufz3CLRVgdebBeSBEmhTfTUV0HLkSyNzwKFpuzJxucGd72ulPvEp6eHvyJAPJz37YcU8cjaL1v05T6s2ee99li35GlDDtCzfjVV4ZPAg5JdfWuTj41RAVC0LQhk2/NB4qEu37UxGGjhRFSjBEsS5LxI9QfvgrsHpl/VOn+soH7ZkK7kS6qRgNP/uYsXRWXhHaamcl5OX68gJWTbrW6c7PCqlbCWGnsHJswCmqPIthwXXMfC7ULDNLSKG6mslAt5Dyc8/MCr3vTW7pDyr2d0FvvY86SMQUggxv3qF7TZewqfX1bhK0fMLarIxVMQ1RFo//wN9QGA+2we8rxd2Y1Kr1DBuJyuwXPfv+Exo8yNYQ+x/AYH5k6UVcSYuaB8eYmplG2KQCxt8RBFtoChrwOKNRWLqXdKyfpdp5XmnnWxPvR95gf3h3yLocVYkF0i0uvKKJ0vt8J0Ezfkdfow0B1kUg5bPXKJROX7PwbaCPdYcxyDaO6wwOigRnSmoFvkH1pLb4j1RQAXcX531CHgfN6Izi/h0mpMS4bnyIUcv2GQr+h4z4TxcCtj7qpH2y6yw7XG12jVh7TfeesXG2Q== euanmillar77@gmail.com
+        state: present
+        sudoer: true
+      - name: ronald
+        ssh_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCCN3xjW33fLsAK5+wMZLGEEj8HraA/ZUWW5G7K3uvi+RuAQzhD2Loz9ulhXBT+hqpK2w8f+/ZcwknbVb4Zhd2GttKV0Fb3Yw0/sTVJaL9jGqL4GYK9ugvivqfa5OGh8Mo5HIa+Hi+v1vp1fiyV3Yzp5bSlyrL0zJjVdAU+Ss/L0ZqdLQ3+KmzFctCEe8L3SgOJ3Vh7T60X5V6ugSj8JVNC8tqxDJ53cFCRQP72w46I8ILhv1L+6VZnMVlaAFnwgo2xkWDSLbXQ4sJRFs9lDRdoUzmlfXwjgPpXdBcNVlqzipXwTU6KRJ7PI+N8Kw/ZITXHXA5vfzBwOgh+g7hNC3T MAC@MacBook-Pro
+        state: present
+        sudoer: true
+      - name: septimelowe
+        ssh_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDajUtiwzedsfXn7edAdzIAyXY5HIg4RCc3VLTYSG3w/6cVbx4wpQkP/9Er/WpqNewsvmDKnOWiJ/HiYCD9FybwuDWTUrLYAAOYwTwBy4jz6SHi3u9/Xj2B5ZUmBtlLG2QwSDUPQGrEzlLGXGG7OOf/Z7IQ9mtkGaCBV4+TbJPWUSHcceZmVlo7kzdhRnGLuETl4bV5u1ELWZfBqGucuQIJiPZI8YPj+YbAPr2UCW01YVmTpCdyXce5l9jm+vk7rRaMhVgrHr8Cn9FK6ffGar08Z7jk7J9Ha2jtSkht1pcqCUpO0LacSEETUKK4Ohfl+vWAxx9RQHngcetL1vh+XTiqzuM+B/r5PJ930j4wGlAMj9YnJlOvFob3hADHUSGuEilUYGfCnvJpi7cRmyrvBDnGeZghxQoRsnZkOc4Ox1nJj5i/ezmaqt55YzltvfA2pp8e77Nr99F1J7wYU0ZYjK8U/i/G2V/UfY1+riGxmyikmcduO1jTANye9Q3toX3UTuc= septime.lowe@gmail.com
         state: present
         sudoer: true
 
@@ -25,13 +40,13 @@ all:
         two_factor: false
         ssh_keys:
           # if yes, then this should list the public keys of the private keys that are used when connecting to the production servers.
-          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABg...Z/rhU= provision@github-runner-243 # example provision user key
-          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABg...Z/rhU= provision@github-runner-244 # example provision user key
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCql9jWBBH2097e08GedlxK0qmiDyHjJDuB03FzYmErGMZE55WhlFc9OtRcwyv6gfbKqOpiK2RVrLYzxdE8mkDR1RWWmTqtRtKMyUqlhoFvhwUHVrfUEFvvwKdxv/DVD1qDTJVsc2GXx9mtC2vJkP7tdC9zir7IhksQTiK3IlIlLv/OGb9t8DnVel0SgppEa9vTv12BL93NbEZKy3vzI2NDE96Fwjz+GxhURrgEeUu2qGPt6PtulKlj6JVS+yGYVMuY3Eh8vgcnRXoPoH86j41LzxaTsERJVgTSf8I2u3LEdY18etq1cRGvquAG396ZJAtIa6H5CSrfj3rPKHs4KDIXW0HlgXGkUhef1iu/GmKFNr5IA4dy7bo9G71U7GldWUHBG0QTK9UtbQvqeMzBlZZzUq5aKDWNCotluAtf1BXW3hmxFSgAvK+rpWX0k5t/1e5dCkFVX/FjNjUy/UlTI/QbxrcHh3Dd8mOfIMT8wiMqrtbjfMyhMvCO0fTm0fmpmgE= provision@prod # example provision user key
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC2KAYe+T+gW9+PfmoW8gh4CtWw7ykavZ6l1GnQNRUV1jDD0F386owCMuIVTNmo8hKuhJKZpH3XQKLjck50Yjgzv8tVxxXqzp5wDKP+j0BhDOWSYDMY0o2oIculQ4Nf+8g5rE8m2wWxWyCSjAQ5GFxwfAfp5BCxP5dNcGGbmOCJMqeeLQyGCGJ5JVlHxAlxc0FTaI00a5xOT5bez5DR2CnIOuCgY6eQG2LqrGrApF4T+LY0Zn23SBHm9kH3ON0QkhkHwoHH7yG3Ra9P4SfP0SJzTUwPDZ614RWGdY6luDjGlrycBSMhtAiVplmUAz0e4vG/0AuxP1GrZm8DaRCc6n3Smz7Xac3sOB/4rUAfmkskJ6WPJqRKOs1WW7Kztx3qxKfHFye5fqY8C3EJfzdOdmRl4sryMWk6Xa3TDGPdvp43yni3mUQvMnRcsuTFWQDNxm/i5Plh4+HQZzn2SY9vkiWJs32ZRZcKqBNhFtTNAy9N8zSggtgqoBQSdSO8QFUPIh8= provision@staging # example provision user key
 
 docker-manager-first:
   hosts:
     qa: # @todo set this to be the hostname of your target server
-      ansible_host: '55.55.55.55' # @todo set this to be the IP address of your server
+      ansible_host: '164.90.179.92' # @todo set this to be the IP address of your server
       data_label: data1 # for manager machines, this should always be "data1"
 
 # QA and staging servers are not configured to use workers.

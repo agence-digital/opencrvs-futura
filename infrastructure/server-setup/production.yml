@@ -21,34 +21,49 @@ all:
     enable_backups: true
     only_allow_access_from_addresses:
       # @todo place the IP address of your VPN server or other explicitly allowed traffic sources here
-      - 55.55.55.55 # example VPN server IP address
+      - 164.90.179.92 # example VPN server IP address
     users:
       # @todo this is where you define which development team members have access to the server.
       # If you need to remove access from someone, do not remove them from this list, but instead set their state: absent
-      - name: my-user
+      - name: riku
         ssh_keys:
-          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABg...Z/rhU= user@example.com
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWIF63S4f3z9wQMvWibmvl7MPuJ6EVrkP0HuvgNhcs/4DZYMcR/GRBvV4ldOSYMlBevIXycgGzNDxKJgENUuwIWanjBu7uVAHyD6+cIRD1h63qq7Cjv/2HYTfBDKOrKzPOhA6zWvKO0ZGWsjRXk5LWMCbKOkvKJCxOpj/NVBxeE4FTK5YADYPV3OSsmBtqTHrVLm2sMmShU/2hMYYswWkobidjX65+nK/X+3C+yJbHwiydVvn+QCrFlFfCLPWKe8rUpOxyxofPqWVQh6CHhHfT8okaOc9sOE8Qeip9ljo84DftJh3Xm3ynOdWK1hH2BvRvxNadWqcE1qECbkg4tx2x riku.rouvila@gmail.com
+        state: present
+        sudoer: true
+      - name: euan
+        ssh_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDECqHO65UpyrrO8uueD06RxGaVVq22f152Rf8qVQQAAIGAMu6gCs7ztlZ8a3yQgSEIjM/Jl1/RqIVs6CziTEef74nLFTZ5Ufz3CLRVgdebBeSBEmhTfTUV0HLkSyNzwKFpuzJxucGd72ulPvEp6eHvyJAPJz37YcU8cjaL1v05T6s2ee99li35GlDDtCzfjVV4ZPAg5JdfWuTj41RAVC0LQhk2/NB4qEu37UxGGjhRFSjBEsS5LxI9QfvgrsHpl/VOn+soH7ZkK7kS6qRgNP/uYsXRWXhHaamcl5OX68gJWTbrW6c7PCqlbCWGnsHJswCmqPIthwXXMfC7ULDNLSKG6mslAt5Dyc8/MCr3vTW7pDyr2d0FvvY86SMQUggxv3qF7TZewqfX1bhK0fMLarIxVMQ1RFo//wN9QGA+2we8rxd2Y1Kr1DBuJyuwXPfv+Exo8yNYQ+x/AYH5k6UVcSYuaB8eYmplG2KQCxt8RBFtoChrwOKNRWLqXdKyfpdp5XmnnWxPvR95gf3h3yLocVYkF0i0uvKKJ0vt8J0Ezfkdfow0B1kUg5bPXKJROX7PwbaCPdYcxyDaO6wwOigRnSmoFvkH1pLb4j1RQAXcX531CHgfN6Izi/h0mpMS4bnyIUcv2GQr+h4z4TxcCtj7qpH2y6yw7XG12jVh7TfeesXG2Q== euanmillar77@gmail.com
+        state: present
+        sudoer: true
+      - name: ronald
+        ssh_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCCN3xjW33fLsAK5+wMZLGEEj8HraA/ZUWW5G7K3uvi+RuAQzhD2Loz9ulhXBT+hqpK2w8f+/ZcwknbVb4Zhd2GttKV0Fb3Yw0/sTVJaL9jGqL4GYK9ugvivqfa5OGh8Mo5HIa+Hi+v1vp1fiyV3Yzp5bSlyrL0zJjVdAU+Ss/L0ZqdLQ3+KmzFctCEe8L3SgOJ3Vh7T60X5V6ugSj8JVNC8tqxDJ53cFCRQP72w46I8ILhv1L+6VZnMVlaAFnwgo2xkWDSLbXQ4sJRFs9lDRdoUzmlfXwjgPpXdBcNVlqzipXwTU6KRJ7PI+N8Kw/ZITXHXA5vfzBwOgh+g7hNC3T MAC@MacBook-Pro
+        state: present
+        sudoer: true
+      - name: septimelowe
+        ssh_keys:
+          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDajUtiwzedsfXn7edAdzIAyXY5HIg4RCc3VLTYSG3w/6cVbx4wpQkP/9Er/WpqNewsvmDKnOWiJ/HiYCD9FybwuDWTUrLYAAOYwTwBy4jz6SHi3u9/Xj2B5ZUmBtlLG2QwSDUPQGrEzlLGXGG7OOf/Z7IQ9mtkGaCBV4+TbJPWUSHcceZmVlo7kzdhRnGLuETl4bV5u1ELWZfBqGucuQIJiPZI8YPj+YbAPr2UCW01YVmTpCdyXce5l9jm+vk7rRaMhVgrHr8Cn9FK6ffGar08Z7jk7J9Ha2jtSkht1pcqCUpO0LacSEETUKK4Ohfl+vWAxx9RQHngcetL1vh+XTiqzuM+B/r5PJ930j4wGlAMj9YnJlOvFob3hADHUSGuEilUYGfCnvJpi7cRmyrvBDnGeZghxQoRsnZkOc4Ox1nJj5i/ezmaqt55YzltvfA2pp8e77Nr99F1J7wYU0ZYjK8U/i/G2V/UfY1+riGxmyikmcduO1jTANye9Q3toX3UTuc= septime.lowe@gmail.com
         state: present
         sudoer: true
 
 docker-manager-first:
   hosts:
-    prod-01: # @todo set this to be the hostname of your target server
-      ansible_host: '22.22.22.22' # todo set this to be the hostname of your target server
+    prod: # @todo set this to be the hostname of your target server
+      ansible_host: '161.35.212.242' # todo set this to be the hostname of your target server
       data_label: data1
       # @todo as production servers are not directly accessible from the internet, you need to use a jump server to access them.
-      ansible_ssh_common_args: '-J jump@55.55.55.55 -o StrictHostKeyChecking=no'
+      ansible_ssh_common_args: '-J jump@164.90.179.92 -o StrictHostKeyChecking=no'
 
 # @todo We recommend you add 2-4 workers for a scaled production deployment
 # This should depend on the size of your country and the number of end users.
 docker-workers:
   hosts:
-    prod-02: # @todo set this to be the hostname of your target server
-      ansible_host: '33.33.33.33'
+    worker-node: # @todo set this to be the hostname of your target server
+      ansible_host: '104.248.242.201'
       data_label: data2
-      ansible_ssh_common_args: '-J jump@55.55.55.55 -o StrictHostKeyChecking=no'
+      ansible_ssh_common_args: '-J jump@164.90.179.92 -o StrictHostKeyChecking=no'
 
 backups:
   hosts:
     backup: # @todo set this to be the hostname of your backup server
-      ansible_host: '66.66.66.66'
+      ansible_host: '46.101.99.140'
