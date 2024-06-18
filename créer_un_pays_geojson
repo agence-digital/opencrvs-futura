@@ -1,0 +1,7 @@
+Comment créer un Pays sur Geojson
+
+1. se connecter sur la page https://geojson.io/
+2. utilisez les outils de dessins pour dessiner votre Pays
+3. sur la fenetre de droite configurer votre code Json (vous pourez donner des noms au differentes region, des id, et même modifier les propriètées geometriques)
+4. si le rendu vous convient exportez la fichier sur le menu "save"
+5. integrez le sur opencrvs 
